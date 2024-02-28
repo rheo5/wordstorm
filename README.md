@@ -1,4 +1,5 @@
 # word-storm
+\*currently work in progress\*
 
 through user's choice of source link and keyword, outputs words that share contextual similarities
 
