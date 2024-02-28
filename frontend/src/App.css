@@ -1,0 +1,10 @@
+.form-input {
+    padding-left:5px;
+    border-bottom: 1px solid gray; /* Add bottom border for a better visual indication */
+    outline: none; 
+  }
+  
+  .form-input:focus {
+    border-bottom: 1px solid gray; /* Add bottom border for a better visual indication */
+  }
+  
