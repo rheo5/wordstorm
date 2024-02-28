@@ -11,6 +11,10 @@ used: typescript, react.js, tailwindcss, python, flask, beautifulsoup, word2vec,
 - using Word2vec technique, generate list of words similar to target word based on contextual relevance
 - integrates NLTK to exclude irrelevant words (stopwords) from output list
 
+### use cases?
+
+- was inspired by the brainstorming technique and could be of assistance
+
 ### potential improvements in the future
 
 - [ ] pre-trained model to save time
