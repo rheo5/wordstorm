@@ -3,6 +3,10 @@
 
 through user's choice of source link and keyword, outputs words that share contextual similarities
 
+![default](./example/default.png)
+
+![output](./example/output.png)
+
 used: typescript, react.js, tailwindcss, python, flask, beautifulsoup, word2vec, nlp, nltk
 
 ### steps
@@ -15,13 +19,6 @@ used: typescript, react.js, tailwindcss, python, flask, beautifulsoup, word2vec,
 ### use cases?
 
 - was inspired by the brainstorming technique and could be of assistance
-
-**start page**
-![default](./example/default.png)
-
-**after input**
-![output](./example/output.png)
-
 
 ### potential improvements in the future
 
