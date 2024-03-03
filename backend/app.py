@@ -1,6 +1,6 @@
 from flask import Flask, request, jsonify
 from flask_cors import CORS
-from train import train_source  # Import train_source function from train.py
+from train import train_source 
 
 app = Flask(__name__)
 CORS(app)

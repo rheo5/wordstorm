@@ -15,6 +15,13 @@ used: typescript, react.js, tailwindcss, python, flask, beautifulsoup, word2vec,
 
 - was inspired by the brainstorming technique and could be of assistance
 
+**start page**
+![default](./example/default.png)
+
+**after input**
+![output](./example/output.png)
+
+
 ### potential improvements in the future
 
 - [ ] pre-trained model to save time
@@ -25,3 +32,4 @@ used: typescript, react.js, tailwindcss, python, flask, beautifulsoup, word2vec,
 - [ ] better ui
 - [ ] change to preprocess text instead of cleaning afterwards
 - [ ] experiment with different parameters for word2vec model for better combination
+- [ ] specify error message

@@ -1,4 +1,4 @@
-import React, { useState, FormEvent } from 'react'; // Import FormEvent
+import { useState, FormEvent } from 'react'; // Import FormEvent
 import './App.css';
 
 function App() {
@@ -6,18 +6,24 @@ function App() {
   const [inputSource, setInputSource] = useState<string>('');
   const [similarWords, setSimilarWords] = useState<string[]>([]);
 
-  const handleSubmit = async (event: FormEvent<HTMLFormElement>) => { // Specify event type
+  const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    console.log("handling submit\n")
-    const response = await fetch('http://localhost:5000/api/similar-words', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({ word: inputWord, source: inputSource })
-    });
-    const data = await response.json();
-    setSimilarWords(data.similarWords);
+    try {
+      const response = await fetch('http://localhost:5000/api/similar-words', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ word: inputWord, source: inputSource })
+      });
+      if (!response.ok) {
+        throw new Error('Failed to fetch');
+      }
+      const data = await response.json();
+      setSimilarWords(data.similarWords);
+    } catch (error: any) {
+      console.error('Error fetching data:', error.message);
+    }
   };  
 
   return (
