@@ -31,3 +31,11 @@ used: typescript, react.js, tailwindcss, python, flask, beautifulsoup, word2vec,
 - [ ] change to preprocess text instead of cleaning afterwards
 - [ ] experiment with different parameters for word2vec model for better combination
 - [ ] specify error message
+
+### how to?
+
+- `cd frontend`
+- `npm start`
+- open new terminal
+- `cd backend`
+- `py app.py`
